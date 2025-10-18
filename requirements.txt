@@ -12,3 +12,4 @@ PyPDF2
 pypdfium2
 tqdm
 typing-extensions
+pydantic==1.10.13
