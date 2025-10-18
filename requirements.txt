@@ -3,13 +3,13 @@ langchain==0.1.16
 langchain-core==0.1.42
 langchain-community==0.0.36
 langchain-huggingface==0.3.1
-langchain-groq==0.0.6
-sentence-transformers
+langchain-groq==0.1.0 
+pydantic==1.10.13
 faiss-cpu
+sentence-transformers
 python-dotenv
 pypdf
 PyPDF2
 pypdfium2
 tqdm
 typing-extensions
-pydantic==1.10.13
