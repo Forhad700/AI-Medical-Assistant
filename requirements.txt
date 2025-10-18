@@ -1,5 +1,5 @@
 streamlit
-langchain==0.0.220
+langchain
 langchain-core
 langchain-community
 langchain-huggingface
