@@ -1,6 +1,6 @@
-streamlit
+streamlit==1.50.0
 langchain==0.0.310
-langchain-groq==0.0.3
+langchain-groq==0.3.8
 langchain-community==0.0.21
 langchain-core==0.1.32
 langchain-huggingface==0.0.5
@@ -9,6 +9,5 @@ faiss-cpu==1.7.4
 python-dotenv==1.0.1
 pypdf==3.17.4
 pypdfium2==4.30.0
-PyPDF2
 tqdm==4.66.1
 typing-extensions==4.11.0
