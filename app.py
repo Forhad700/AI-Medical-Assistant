@@ -29,9 +29,12 @@ def get_embeddings():
 
 @st.cache_resource(show_spinner="Loading FAISS index...")
 def load_faiss_index():
-    embeddings = get_embeddings()
-    vectorstore = FAISS.load_local("index.faiss", embeddings, allow_dangerous_deserialization=True)
-    return vectorstore
+    from index_documents import build_index 
+    embeddings = get_embeddings()  
+    if not os.path.exists("index.faiss"):
+        st.info("🔄 FAISS index not found. Rebuilding from Medical_book.pdf...")
+        build_index() 
+    return FAISS.load_local("index.faiss", embeddings, allow_dangerous_deserialization=True)
 
 @st.cache_resource(show_spinner="Loading LLM...")
 def get_rag_chain(_retriever):
