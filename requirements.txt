@@ -1,7 +1,7 @@
 streamlit
-langchain==0.1.9
-langchain-core==0.1.9
-langchain-community==0.0.21
+langchain
+langchain-core
+langchain-community
 langchain-huggingface
 langchain-groq
 sentence-transformers
@@ -12,4 +12,3 @@ PyPDF2
 pypdfium2
 tqdm
 typing-extensions
-pydantic==1.10.12
